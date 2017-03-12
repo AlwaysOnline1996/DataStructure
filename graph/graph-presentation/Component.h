@@ -40,7 +40,7 @@ private:
     void dfs(int v){
         visited[v] = true;
         id[v] = ccount;
-        typename Graph::adjIterator adj(v,G);  // 
+        typename Graph::adjIterator adj(G,v);  // adjIterator(Graph &graph,int v) 
         for(int i = adj.begin(); !adj.end(); i = adj.next()){
             if(!visited[i]){
                 dfs(i);
