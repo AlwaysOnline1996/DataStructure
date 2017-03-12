@@ -1,2 +1,2 @@
 # DataStructure
-Practice of datastructure
+record of datastructure implement.
