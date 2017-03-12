@@ -57,7 +57,7 @@ public:
         int index;
         DenseGraph &G;
     public:
-        adjIterator(int v, DenseGraph graph):G(graph){
+        adjIterator(DenseGraph graph,int v):G(graph){
             this->v = v;
             index = 0;
         }
